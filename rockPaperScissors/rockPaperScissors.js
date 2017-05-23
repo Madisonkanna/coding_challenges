@@ -1,6 +1,6 @@
 /*
-* Write a function that generates every sequence of throws a single
-* player could throw over a three-round game of rock-paper-scissors.
+* Write a function that generates every sequence of combinationss a single
+* player could combinations over a three-round game of rock-paper-scissors.
 *
 * Your output should look something like:
 *   [["rock", "rock", "rock"],
@@ -17,7 +17,22 @@
 *
 */
 
-var rockPaperScissors = function (
-) {
-  // TODO: your solution here
-};
+
+
+
+var rockPaperScissors = function() {
+
+  let result = [];
+  let combinations = ["rock", "paper", "scissors"];
+  for (let i = 0; i < combinations.length; i++){
+    for (let k = 0; k < combinations.length; k++){
+      for (let j = 0; j < combinations.length; j++){
+        result.push([combinations[i], combinations[k], combinations[j]]);
+      }
+    }
+  }
+
+  return result;
+}
+
+
