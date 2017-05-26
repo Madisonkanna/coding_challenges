@@ -20,9 +20,36 @@
  *
  */
 
-var nthFibonacci = function (n) {
-  // TODO: implement me!
+
+
+
+var nthFibonacci = function(n) {
+  if(n === 0){
+    return 0;
+  }
+  else if(n <= 2) {
+    return 1;
+  } else {
+    return nthFibonacci(n-1)+nthFibonacci(n-2);
+  }
 };
+
+
+var nthFibonacci = function (n) {
+  var result = [];
+  result.push(0, 1);
+  for (let i = 1; i < n; i++ ){
+    result[i+1] = result[i]+result[i-1];
+    result.push(result[i+1]);
+  }
+  result.pop();
+  return result[n];
+};
+
+
+
+
+
 
 
 
