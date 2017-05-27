@@ -32,10 +32,36 @@
 
 // Introduce i into the global scope so we can test function efficiency
 var i;
-
 // Feel free to add helper functions if needed.
 
 
-var bubbleSort = function(array) {
+var bubbleSort = function(arr) {
   // Your code here.
+  let temp;
+  let result = false;
+  while(result === false){
+    result = true;
+    for (i = 0; i < arr.length; i++){
+      if(arr[i]>arr[i+1]){
+        result = false;
+        temp = arr[i];
+        arr[i] = arr[i+1];
+        arr[i+1] = temp;
+      }
+    }
+  }
+  return arr;
 };
+
+//Bubble sort must be very slow, time complexity is Quadratic n^2  
+
+//Extra Credit: Time complexity is n linear 
+
+
+
+
+
+
+
+
+
