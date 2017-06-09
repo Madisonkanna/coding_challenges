@@ -33,8 +33,24 @@
 
 'use strict';
 
-var compose = function() {
+var compose = function(func1, func2) {
+  return function(str) {
+    return func1(func2(str));
+  }
 };
 
-var pipe = function() {
+
+
+
+var pipe = function(func1, func2) {
+  if(arguments[2]){  return function(num) {
+    return func2(func2(func1(num)));
+                        } 
+  } if(arguments[0] && arguments[1]) {  return function(num) {
+    return func2(func1(num));
+                        } 
+  }
+
 };
+
+
