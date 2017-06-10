@@ -16,6 +16,19 @@
  */
 
 var rotatedArraySearch = function (rotated, target) {
-  // Your code here:
+  var resultIndex;
+  function getMinofArray(rotated) {
+    return Math.min.apply(null, rotated);
+  }
+  var min = getMinofArray(rotated);
+  var start = rotated.indexOf(min);
+
+  var sortedArr = rotated.sort();
+  var myIndex = start+sortedArr.indexOf(target);
+  if(myIndex > rotated.length-1) {
+    resultIndex = myIndex - rotated.length;
+  } else return myIndex;
+  return resultIndex;
 };
 
+// console.log(rotatedArraySearch([4, 5, 6, 0, 1, 2, 3], 3)); // === 5
