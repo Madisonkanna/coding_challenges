@@ -38,18 +38,36 @@
  * evenNumbers.includes(2) should be true, evenNumbers.includes(3) should be false
  */
 
-
-var Range = function(start, end, step) {
+var arr = [];
+var Range = function(start, end=200, step=1) {
+  if(start <= end) {
+    this.start = start;
+    this.end = end;
+  } else {
+    this.start = end;
+    this.end = start;
+  }
+  this.step = step; 
 };
 
 Range.prototype.size = function () {
+  let i = this.start;
+  arr.push(i)
+  while(i <= this.end) {
+    i = i + this.step;
+    if(i <= this.end) {
+      arr.push(i);
+    }
+  }
+  return arr.length;
 };
 
 Range.prototype.each = function (callback) {
+  for (let k = 0; k < arr.length; k++){
+    callback(arr[k]);
+  }
 };
 
 Range.prototype.includes = function (val) {
+  return arr.includes(val);
 };
-
-var range = new Range(1);
-
