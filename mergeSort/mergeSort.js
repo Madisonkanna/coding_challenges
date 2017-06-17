@@ -99,4 +99,26 @@
 
 var mergeSort = function(array) {
   // Your code here.
+  for (let i = 0; i < array.length; i++){
+    array[i] = [array[i]];
+  }
+  for (let i = 0; i < array.length; i=i+2){
+    array[i] = [array[i], array[i+1]];
+  }
 };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
