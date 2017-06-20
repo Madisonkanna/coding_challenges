@@ -33,6 +33,16 @@
 
 var shuffleDeck = function(deck) {
   // Your code here
+  var items = orderedDeck();
+  console.log("items length: ", items.length);
+  var item = [];
+  for(var i = 0; i < items.length; i++) {
+    var randIndex = Math.floor(Math.random()*items.length);
+    item.push(items.splice(randIndex, 1));
+    i--;
+
+  }
+  return item;
 };
 
 // Ordered deck generator provided for your testing convenience
@@ -50,3 +60,11 @@ var orderedDeck = function() {
 
   return deck;
 };
+
+
+
+
+
+
+
+
