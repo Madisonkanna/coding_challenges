@@ -44,9 +44,18 @@ var spiralTraversal = function(matrix) {
       n--;
     }
   }
-
+  if(matrix.length%2===1){
+    result.pop();
+  }
   return result;
 };
+
+
+    console.log(spiralTraversal([
+      [1,2,3],
+      [4,5,6],
+      [7,8,9]
+    ]));
 
 console.log(spiralTraversal([
       [1,2,3,4],
@@ -54,3 +63,16 @@ console.log(spiralTraversal([
       [9,10,11,12],
       [13,14,15,16]
     ]));
+
+console.log(spiralTraversal([
+          [1,2,3,4,5],
+          [6,7,8,9,10],
+          [11,12,13,14,15],
+          [16,17,18,19,20],
+          [21,22,23,24,25]
+        ]));
+
+
+
+
+
