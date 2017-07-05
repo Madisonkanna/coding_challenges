@@ -17,6 +17,7 @@
 var spiralTraversal = function(matrix) {
 
   // TODO: Implement me!
+<<<<<<< HEAD
   var result = [];
   var n = matrix[0].length-1;
   var j = matrix.length-1;
@@ -100,3 +101,6 @@ console.log("******* two more test: ", spiralTraversal([
   ]));
 
 console.log("******* three more test: ", spiralTraversal([[1, 2, 3], [4, 5, 6], [7, 8, 9], [10, 11, 12], [13, 14, 15], [16, 17, 18], [19, 20, 21], [22, 23, 24]]));
+=======
+};
+>>>>>>> 09f192b7741cf938936b97f142a1d2eedc8d0824
