@@ -35,4 +35,15 @@ var rockPaperScissors = function() {
   return result;
 }
 
+// var rockPaperScissors = function(n) {
+//   let result = [];
+//   let combinations = ["rock", "paper", "scissors"];
+//   var helper = function() {
+//     if(){
+
+//     }
+//     else helper(combinations[])
+//   }
+//   helper()
+// }
 
