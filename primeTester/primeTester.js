@@ -7,6 +7,7 @@
 var primeTester = function(n) {
   if (typeof n !== 'number' || n < 1 || n % 1 !== 0) {
     // n isn't a number or n is less than 1 or n is not an integer
+<<<<<<< HEAD
     // console.log("HERE! ||");
 
     return false;
@@ -19,6 +20,10 @@ var primeTester = function(n) {
     }
   }
   return true;
+=======
+    return false;
+  }
+>>>>>>> e47752d074f4ecea7299df11f000a4c7fb06f24f
   // TODO: return true if n is prime, false otherwise
 };
 
@@ -31,5 +36,8 @@ var primeTester = function(n) {
 var primeSieve = function (start, end) {
 };
 
+<<<<<<< HEAD
 // console.log(primeTester(7));
+=======
+>>>>>>> e47752d074f4ecea7299df11f000a4c7fb06f24f
 
