@@ -35,6 +35,7 @@
  *
  */
 
+<<<<<<< HEAD
 var characterFrequency = function(string) {
   var result = [];
   var resultElem = [];
@@ -78,3 +79,9 @@ var characterFrequency = function(string) {
 
 
 
+=======
+
+var characterFrequency = function(string) {
+  return result;
+};
+>>>>>>> 178680be044490c0bf6f9c8be97232e74fa47457
