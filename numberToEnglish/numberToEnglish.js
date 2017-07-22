@@ -55,6 +55,7 @@ var numbersToPlace = {
 
 Number.prototype.toEnglish = function () {
   // return my value as english words
+<<<<<<< HEAD
   var result = [];
   var myFun = function(num) {
     for(var key in numbersToPlace){
@@ -83,3 +84,6 @@ Number.prototype.toEnglish = function () {
   // return result;
 };
 // console.log((7000).toEnglish());
+=======
+};
+>>>>>>> d8adaf7e05372ae080a78b18ae087c2616e2c031
