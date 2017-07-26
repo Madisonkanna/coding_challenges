@@ -31,4 +31,19 @@
 
 
 var jsonpRequest = function(url, callback) {
+  fetch(url)
+    .then(function(data) {
+      callback(data.json());
+    })
+    .catch(function(err) {
+      console.log(err);
+    });
 };
+
+
+
+
+
+
+
+
