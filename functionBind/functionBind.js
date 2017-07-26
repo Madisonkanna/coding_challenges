@@ -23,6 +23,7 @@
  *
 */
 
+<<<<<<< HEAD
 var bind = function(func, obj) {
   // TODO: Your code here
   return func();
@@ -41,6 +42,12 @@ boundShout(); // alerts 'alice'
 boundShout = bind(alice.shout, {name: 'bob'});
 boundShout(); // alerts 'bob'
 
+=======
+var bind = function(
+) {
+  // TODO: Your code here
+};
+>>>>>>> 36ec6410765e0c348df471646da7fb3f882089a3
 
 /*
  * Function.prototype.bind:
@@ -70,5 +77,8 @@ boundShout(); // alerts 'bob'
 Function.prototype.bind = function(
 ) {
   // TODO: Your code here
+<<<<<<< HEAD
   return;
+=======
+>>>>>>> 36ec6410765e0c348df471646da7fb3f882089a3
 };
