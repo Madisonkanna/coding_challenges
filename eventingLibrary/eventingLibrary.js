@@ -22,6 +22,7 @@
 
 var mixEvents = function(obj) {
   // TODO: Your code here
+<<<<<<< HEAD
   var callback1;
   var obj1 = obj;
 
@@ -78,3 +79,7 @@ var mixEvents = function(obj) {
 
 
 
+=======
+  return obj;
+};
+>>>>>>> 16cbc200274f1c8c106cdffb4865477db6b4514c
