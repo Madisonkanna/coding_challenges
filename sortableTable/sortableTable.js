@@ -1,3 +1,4 @@
+import $ from 'jquery';
 /**
  * Use jQuery to make an HTML table that is sortable by column.
  *
@@ -10,6 +11,8 @@
 
 $(function () {
   // TODO: your code here!
-
+  $("thead").each(function() {
+    $(this).text("Hereeeeee");
+  })
 });
 
