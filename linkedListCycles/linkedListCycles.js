@@ -37,6 +37,7 @@ var Node = function(value) {
 
 var hasCycle = function(linkedList) {
   // TODO: implement me!
+<<<<<<< HEAD
   var arr = [];
 
   var myfun = function(node){
@@ -81,3 +82,6 @@ var hasCycle = function(linkedList) {
 // nodeE.next = nodeB;
 // console.log(nodeE.next);
 // console.log(hasCycle(nodeA)); // => true
+=======
+};
+>>>>>>> a348dadd81a49509fe76b7d3dc5c53d6a2d3d531
