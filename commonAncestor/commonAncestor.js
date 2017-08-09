@@ -15,7 +15,10 @@
 
 var Tree = function() {
   this.children = [];
+<<<<<<< HEAD
   console.log(this);
+=======
+>>>>>>> 38f222ec23999e19968faed05df275c43ded6616
 };
 
 /**
@@ -24,16 +27,22 @@ var Tree = function() {
 Tree.prototype.addChild = function(child) {
   if (!this.isDescendant(child)) {
     this.children.push(child);
+<<<<<<< HEAD
     console.log(this);
 
+=======
+>>>>>>> 38f222ec23999e19968faed05df275c43ded6616
   } else {
     throw new Error('That child is already a child of this tree');
   }
   return this;
 };
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 38f222ec23999e19968faed05df275c43ded6616
 /**
   * return the lowest common ancestor of the two child nodes.
   * (assume for these examples that only a women can be the parent of a child)
@@ -56,6 +65,7 @@ Tree.prototype.getClosestCommonAncestor = function(/*...*/
   * 3.) me.getAncestorPath(me) -> [me]
   * 4.) grandma.getAncestorPath(H R Giger) -> null
   */
+<<<<<<< HEAD
 Tree.prototype.getAncestorPath = function(/*...*/child
 ) {
   // TODO: implement me!
@@ -80,6 +90,11 @@ Tree.prototype.getAncestorPath = function(/*...*/child
   }
 
 
+=======
+Tree.prototype.getAncestorPath = function(/*...*/
+) {
+  // TODO: implement me!
+>>>>>>> 38f222ec23999e19968faed05df275c43ded6616
 };
 
 /**
@@ -113,6 +128,7 @@ Tree.prototype.removeChild = function(child) {
     throw new Error('That node is not an immediate child of this tree');
   }
 };
+<<<<<<< HEAD
 
 
 
@@ -122,3 +138,5 @@ grandma.addChild(mom);
 console.log(grandma.children.children);
 grandma.getAncestorPath(mom)
 
+=======
+>>>>>>> 38f222ec23999e19968faed05df275c43ded6616
