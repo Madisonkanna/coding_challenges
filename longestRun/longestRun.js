@@ -29,3 +29,27 @@ var randomString = function (len) {
 
   return text;
 };
+
+//another RANDOM STRING GENERATOR (characters don't repeat):
+var randomString = function (num) {
+  var text = '';
+  var possible = 'abcdefghijklmnopqrstuvwxyz';
+  var randChar = '';
+  var temp = {};
+  var filled = false;
+
+  while (!filled) {
+    randChar = possible.charAt(Math.floor(Math.random()*possible.length));
+    if(!temp[randChar]){
+      temp[randChar]=1;
+      text += randChar;
+    }
+    
+    if(text.length === num){
+      filled = true;
+    }
+  }
+
+  return text;
+};
+
